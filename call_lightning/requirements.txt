@@ -1,0 +1,20 @@
+base58==2.1.1
+certifi==2023.7.22
+cffi @ file:///private/tmp/cffi-20231014-5567-1hyue8f/cffi-1.16.0
+charset-normalizer==3.3.1
+cryptography==41.0.5
+Deprecated==1.2.14
+docutils @ file:///private/tmp/docutils-20231015-5454-w1xze4/docutils-0.20.1
+idna==3.4
+jose==1.0.0
+jwcrypto==1.5.0
+PBinCLI @ git+ssh://git@github.com/10gen/privatebin-cli.git@12b08d96a067fd08b8c1e556c2fc4a19596d50bd
+protobuf==4.24.4
+pycparser @ file:///private/tmp/pycparser-20231013-5787-1anpge2/pycparser-2.21
+pycryptodome==3.19.0
+PyYAML @ file:///private/tmp/pyyaml-20231006-5597-bdjg8x/PyYAML-6.0.1
+requests==2.31.0
+six==1.16.0
+sjcl==0.2.1
+urllib3==2.0.7
+wrapt==1.15.0

@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h1>{% block title %} MaaS Homepage {% endblock %}</h1>
+    {% if not current_user.is_authenticated %}
+    Hello. Please register and login to launch.
+    {% endif %}
+
+    {% if current_user.is_authenticated %}
+    Hello Officer {{ current_user.username }}.
+    Please go to /launch.
+    {% endif %}
+{% endblock %}

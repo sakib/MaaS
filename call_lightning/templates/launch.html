@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h1>{% block title %} MaaS Launcher {% endblock %}</h1>
+    <form method="post" action="/launch">
+        <div class="form-group">
+            <label>Target</label>
+            <input type="text" name="target" class="form-control"></input>
+        </div>
+
+        <div class="form-group">
+            <label>Reason</label>
+            <input type="text" name="reason" class="form-control"></input>
+        </div>
+
+        <div class="form-group">
+            <label>Launch Time</label>
+            <input type="text" name="launch_time" class="form-control"></input>
+        </div>
+
+        <div class="form-group">
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </div>
+    </form>
+
+    <h2>Scheduled Launches</h2>
+    <ul>
+        {% for launch in launches %}
+        <li>Target: {{launch.target}}, Reason: {{launch.reason}}, Launch Time: {{launch.launch_time}} </li>
+        {% endfor %}
+    </ul>
+{% endblock %}
